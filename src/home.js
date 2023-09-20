@@ -1,4 +1,4 @@
-// import { document } from "postcss";
+import ghIcon from "../src/images/github-mark-white.svg";
 
 const content = document.getElementById("content");
 
@@ -10,22 +10,13 @@ const bgDiv = document.getElementById("home-wrapper");
 bgDiv.appendChild(
   makeElement(
     "div",
-    [
-      "sm:grid-rows-8",
-      "flex",
-      "min-h-screen",
-      "flex-col",
-      "bg-slate-950/50",
-      "sm:grid",
-    ],
+    ["grid-rows-[auto,_1fr,_auto]", "min-h-screen", "bg-slate-950/50", "grid"],
     "bg-overlay",
   ),
 );
 const overlayDiv = document.getElementById("bg-overlay");
 
-overlayDiv.appendChild(
-  makeElement("header", ["p-6", "sm:row-span-1"], "header"),
-);
+overlayDiv.appendChild(makeElement("header", ["p-6"], "header"));
 const header = document.getElementById("header");
 
 header.appendChild(makeElement("nav", ["flex", "justify-center"], "nav"));
@@ -129,6 +120,114 @@ const contactLink = document.createElement("a");
 contact.appendChild(contactLink);
 contactLink.setAttribute("href", "#");
 contactLink.textContent = "Contact";
+
+overlayDiv.appendChild(
+  makeElement("main", ["flex", "flex-col", "items-center", "pt-16"], "main"),
+);
+const main = document.getElementById("main");
+
+main.appendChild(
+  makeElement(
+    "div",
+    [
+      "flex",
+      "flex-col",
+      "rounded-xl",
+      "border-2",
+      "border-solid",
+      "border-white",
+      "bg-slate-800",
+      "p-3",
+      "text-center",
+      "text-5xl",
+      "font-bold",
+      "sm:text-5xl",
+    ],
+    "logo",
+  ),
+);
+const logo = document.getElementById("logo");
+
+logo.appendChild(makeElement("span", ["text-[#00ff7f]"], "spanOne"));
+const spanOne = document.getElementById("spanOne");
+spanOne.textContent = "Piper's";
+
+logo.appendChild(makeElement("span", ["text-rose-600"], "spanTwo"));
+const spanTwo = document.getElementById("spanTwo");
+spanTwo.textContent = "Pizzeria";
+
+main.appendChild(
+  makeElement(
+    "div",
+    [
+      "flex",
+      "max-w-[80%]",
+      "flex-col",
+      "items-center",
+      "py-10",
+      "text-white",
+      "sm:max-w-[60%]",
+    ],
+    "main-content",
+  ),
+);
+const mainContent = document.getElementById("main-content");
+
+mainContent.appendChild(
+  makeElement(
+    "h1",
+    ["mb-5", "text-center", "text-2xl", "font-bold", "sm:text-4xl"],
+    "hOne",
+  ),
+);
+const hOne = document.getElementById("hOne");
+hOne.textContent = "Welcome to Piper's Pizzeria!";
+
+mainContent.appendChild(
+  makeElement("p", ["mb-5", "font-bold", "sm:text-lg"], "pOne"),
+);
+const pOne = document.getElementById("pOne");
+pOne.textContent =
+  "We are a family-owned business that has been serving the Nashville community for over 20 years. Our pizzas are made to your specifications and baked to perfection in our wood-fired oven.";
+
+mainContent.appendChild(
+  makeElement("p", ["mb-2", "font-bold", "sm:text-lg"], "pTwo"),
+);
+const pTwo = document.getElementById("pTwo");
+pTwo.textContent =
+  "At Piper's Pizzeria, we are committed to providing our customers with the best possible experience. We use only the freshest ingredients. Our dough is made in-house, and we use locally sourced produce whenever possible. We also offer fast and friendly service, and we are always looking for ways to better serve you!";
+
+overlayDiv.appendChild(
+  makeElement(
+    "footer",
+    [
+      "bg-slate-800",
+      "py-2",
+      "text-center",
+      "text-white",
+      "flex",
+      "justify-center",
+      "items-center",
+    ],
+    "footer",
+  ),
+);
+const footer = document.getElementById("footer");
+
+footer.appendChild(makeElement("a", [], "ghLink"));
+const ghLink = document.getElementById("ghLink");
+ghLink.setAttribute("href", "https://github.com/AmberlySB");
+ghLink.classList.add("flex");
+
+ghLink.appendChild(makeElement("span", [], "gitHub"));
+const gitHub = document.getElementById("gitHub");
+const gitHubLogo = document.createElement("img");
+gitHubLogo.setAttribute("src", ghIcon);
+gitHubLogo.classList.add("h-6", "mr-3");
+gitHub.appendChild(gitHubLogo);
+ghLink.appendChild(makeElement("p", [], "footer-text"));
+const footerText = document.getElementById("footer-text");
+footerText.textContent = "Amberly";
 
 function makeElement(elem, classes, idValue) {
   const element = document.createElement(elem);

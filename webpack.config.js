@@ -6,7 +6,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
-    clean: true,
   },
   devtool: "eval-source-map",
   devServer: {
@@ -26,10 +25,10 @@ module.exports = {
         include: path.resolve(__dirname, "src"),
         use: ["style-loader", "css-loader", "postcss-loader"],
       },
-      // {
-      //   test: /\.(png|svg|jpg|jpeg|gif)$/i,
-      //   type: "asset/resource",
-      // },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
     ],
   },
 };
