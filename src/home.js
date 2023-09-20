@@ -2,21 +2,19 @@ import ghIcon from "../src/images/github-mark-white.svg";
 
 const content = document.getElementById("content");
 
-content.appendChild(
-  makeElement("div", ["bg-pizza", "bg-cover"], "home-wrapper"),
-);
-const bgDiv = document.getElementById("home-wrapper");
+content.appendChild(makeElement("div", ["bg-pizza", "bg-cover"], "bg-wrapper"));
+const bgWrapper = document.getElementById("bg-wrapper");
 
-bgDiv.appendChild(
+bgWrapper.appendChild(
   makeElement(
     "div",
     ["grid-rows-[auto,_1fr,_auto]", "min-h-screen", "bg-slate-950/50", "grid"],
     "bg-overlay",
   ),
 );
-const overlayDiv = document.getElementById("bg-overlay");
+const bgOverlay = document.getElementById("bg-overlay");
 
-overlayDiv.appendChild(makeElement("header", ["p-6"], "header"));
+bgOverlay.appendChild(makeElement("header", ["p-6"], "header"));
 const header = document.getElementById("header");
 
 header.appendChild(makeElement("nav", ["flex", "justify-center"], "nav"));
@@ -121,7 +119,7 @@ contact.appendChild(contactLink);
 contactLink.setAttribute("href", "#");
 contactLink.textContent = "Contact";
 
-overlayDiv.appendChild(
+bgOverlay.appendChild(
   makeElement("main", ["flex", "flex-col", "items-center", "pt-16"], "main"),
 );
 const main = document.getElementById("main");
@@ -197,7 +195,7 @@ const pTwo = document.getElementById("pTwo");
 pTwo.textContent =
   "At Piper's Pizzeria, we are committed to providing our customers with the best possible experience. We use only the freshest ingredients. Our dough is made in-house, and we use locally sourced produce whenever possible. We also offer fast and friendly service, and we are always looking for ways to better serve you!";
 
-overlayDiv.appendChild(
+bgOverlay.appendChild(
   makeElement(
     "footer",
     [
