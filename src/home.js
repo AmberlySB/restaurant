@@ -214,10 +214,9 @@ overlayDiv.appendChild(
 );
 const footer = document.getElementById("footer");
 
-footer.appendChild(makeElement("a", [], "ghLink"));
+footer.appendChild(makeElement("a", ["flex"], "ghLink"));
 const ghLink = document.getElementById("ghLink");
 ghLink.setAttribute("href", "https://github.com/AmberlySB");
-ghLink.classList.add("flex");
 
 ghLink.appendChild(makeElement("span", [], "gitHub"));
 const gitHub = document.getElementById("gitHub");
