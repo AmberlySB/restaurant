@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body class="min-h-screen font-serif">
+    <!-- div to attach content in -->
+    <div id="content">
+      <div id="bg-wrapper" class="bg-pizza bg-cover">
+        <div
+          id="bg-overlay"
+          class="grid min-h-screen grid-rows-[auto,_1fr,_auto] bg-slate-950/50"
+        >
+          <!-- Header section -->
+          <header id="header" class="p-6">
+            <nav id="nav" class="flex justify-center">
+              <ul
+                id="ulOne"
+                class="flex w-full items-center justify-evenly text-xl font-bold text-white"
+              >
+                <li
+                  id="home"
+                  class="relative after:absolute after:-bottom-2 after:left-0 after:h-[3px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[#00FF7F] after:transition-transform after:duration-300 after:ease-out after:content-[''] after:hover:origin-bottom-left after:hover:scale-x-100"
+                >
+                  <a href="#">Home</a>
+                </li>
+                <li
+                  id="menu"
+                  class="relative after:absolute after:-bottom-2 after:left-0 after:h-[3px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[#00FF7F] after:transition-transform after:duration-300 after:ease-out after:content-[''] after:hover:origin-bottom-left after:hover:scale-x-100"
+                >
+                  <a href="#">Menu</a>
+                </li>
+                <li
+                  id="contact"
+                  class="rounded-lg border-2 border-solid border-[#00FF7F] bg-[#00FF7F] px-2 text-black"
+                >
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+
+          <!-- main section -->
+          <main
+            id="main"
+            class="mx-auto flex max-w-[80%] flex-col pt-16 lg:grid lg:max-w-[60%] lg:grid-cols-[1fr,_1fr] lg:grid-rows-1"
+          >
+            <div
+              id="main-sidebar"
+              class="col-span-1 mx-auto p-5 text-white lg:mx-0"
+            >
+              <div
+                id="logo"
+                class="mx-auto mb-5 flex max-w-fit flex-col rounded-xl border-2 border-solid border-white bg-slate-800 p-3 text-center text-5xl font-bold"
+              >
+                <span id="spanOne" class="text-[#00FF7F]">Piper's</span>
+                <span id="spanTwo" class="text-rose-600">Pizzeria</span>
+              </div>
+              <div
+                id="menu-wrapper"
+                class="grid max-w-fit grid-cols-2 gap-4 rounded-xl border-2 border-solid border-white bg-slate-800/70 px-3 py-6"
+              >
+                <h1
+                  id="pizza-heading"
+                  class="col-span-2 mb-3 text-center text-2xl font-bold text-[#00FF7F]"
+                >
+                  ---- Pizza ----
+                </h1>
+                <img
+                  src="../src/images/pepperoni.jpg"
+                  alt="pepperoni pizza"
+                  class="col-span-1"
+                />
+                <div id="pepperoni-pizza" class="col-span-1">
+                  <p class="mb-2 font-bold text-rose-600">Pepperoni Pizza</p>
+                  <p>Small: $13.99</p>
+                  <p>Medium: $16.99</p>
+                  <p>Large: $19.99</p>
+                </div>
+                <img
+                  src="../src/images/cheese.jpg"
+                  alt="cheese pizza"
+                  class="col-span-1"
+                />
+                <div id="cheese-pizza" class="col-span-1">
+                  <p class="mb-2 font-bold text-rose-600">Cheese Pizza</p>
+                  <p>Small: $11.99</p>
+                  <p>Medium: $14.99</p>
+                  <p>Large: $17.99</p>
+                </div>
+                <img
+                  src="../src/images/margherita.jpg"
+                  alt="margherita pizza"
+                  class="col-span-1"
+                />
+                <div id="margherita-pizza" class="col-span-1">
+                  <p class="mb-2 font-bold text-rose-600">Margherita Pizza</p>
+                  <p>Small: $16.99</p>
+                  <p>Medium: $19.99</p>
+                  <p>Large: $22.99</p>
+                </div>
+                <img
+                  src="../src/images/hawaiian.jpg"
+                  alt="hawaiian pizza"
+                  class="col-span-1"
+                />
+                <div id="hawaiian-pizza" class="col-span-1">
+                  <p class="mb-2 font-bold text-rose-600">Hawaiian Pizza</p>
+                  <p>Small: $16.99</p>
+                  <p>Medium: $19.99</p>
+                  <p>Large: $22.99</p>
+                </div>
+                <img
+                  src="../src/images/roasted-red-pepper.jpg"
+                  alt="roasted red pepper pizza"
+                  class="col-span-1"
+                />
+                <div id="roasted-red-pepper-pizza" class="col-span-1">
+                  <p class="mb-2 font-bold text-rose-600">
+                    Roasted Red Pepper Pizza
+                  </p>
+                  <p>Small: $16.99</p>
+                  <p>Medium: $19.99</p>
+                  <p>Large: $22.99</p>
+                </div>
+              </div>
+            </div>
+            <div
+              id="main-content"
+              class="col-span-1 items-center p-5 text-white"
+            >
+              <div
+                id="menu-wrapper"
+                class="grid max-w-fit grid-cols-2 gap-4 rounded-xl border-2 border-solid border-white bg-slate-800/70 px-3 py-6"
+              >
+                <h1
+                  class="col-span-2 mb-3 text-center text-2xl font-bold text-[#00FF7F]"
+                >
+                  ---- Pasta & Bread ----
+                </h1>
+                <img
+                  src="../src/images/spaghetti.jpg"
+                  alt="spaghetti"
+                  class="col-span-1"
+                />
+                <div id="spaghetti" class="col-span-1">
+                  <p class="mb-2 font-bold text-rose-600">Spaghetti</p>
+                  <p>Kids: $5.99</p>
+                  <p>Adults: $11.99</p>
+                </div>
+                <img
+                  src="../src/images/penne.jpg"
+                  alt="penne pasta"
+                  class="col-span-1"
+                />
+                <div id="penne" class="col-span-1">
+                  <p class="mb-2 font-bold text-rose-600">Creamy Penne</p>
+                  <p>Kids: $5.99</p>
+                  <p>Adults: $11.99</p>
+                </div>
+                <img
+                  src="../src/images/cheese_bread.jpg"
+                  alt="cheese bread"
+                  class="col-span-1"
+                />
+                <div id="cheese-bread" class="col-span-1">
+                  <p class="mb-2 font-bold text-rose-600">Cheese Bread</p>
+                  <p>Individual: $2.99</p>
+                  <p>Tray: $14.99</p>
+                </div>
+                <h1
+                  class="col-span-2 mb-3 text-center text-2xl font-bold text-[#00FF7F]"
+                >
+                  ---- Drinks ----
+                </h1>
+                <div id="soda" class="col-span-2">
+                  <p class="mb-2 font-bold text-rose-600">Soda</p>
+                  <p>
+                    Options: Coke, Diet Coke, Dr. Pepper, Sprite, Fanta Orange
+                  </p>
+                  <p>Small: $1.99</p>
+                  <p>Medium: $2.99</p>
+                  <p>Large: $3.99</p>
+                </div>
+                <div id="alcohol">
+                  <p class="mb-2 font-bold text-rose-600">Alcohol</p>
+                  <p>Options:</p>
+                  <p>Beer: Budweiser, Bud Light, Miller Light, Coors Light</p>
+                  <p>Glass: $4.99</p>
+                  <p>Pitcher: $15.99</p>
+                  <p>Wine: White, Red, Rose</p>
+                  <p>Glass: $5.99</p>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

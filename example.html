@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body class="min-h-screen font-serif">
+    <div id="content">
+      <div id="bg-wrapper" class="bg-pizza bg-cover">
+        <div
+          id="bg-overlay"
+          class="grid min-h-screen grid-rows-[auto,_1fr,_auto] bg-slate-950/50"
+        >
+          <!-- Header section -->
+          <header id="header" class="p-6">
+            <nav id="nav" class="flex justify-center">
+              <ul
+                id="ulOne"
+                class="flex w-full items-center justify-evenly text-xl font-bold text-white"
+              >
+                <li
+                  id="home"
+                  class="relative after:absolute after:-bottom-2 after:left-0 after:h-[3px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[#00FF7F] after:transition-transform after:duration-300 after:ease-out after:content-[''] after:hover:origin-bottom-left after:hover:scale-x-100"
+                >
+                  <a href="#">Home</a>
+                </li>
+                <li
+                  id="menu"
+                  class="relative after:absolute after:-bottom-2 after:left-0 after:h-[3px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-[#00FF7F] after:transition-transform after:duration-300 after:ease-out after:content-[''] after:hover:origin-bottom-left after:hover:scale-x-100"
+                >
+                  <a href="#">Menu</a>
+                </li>
+                <li
+                  id="contact"
+                  class="rounded-lg border-2 border-solid border-[#00FF7F] bg-[#00FF7F] px-2 text-black"
+                >
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+
+          <!-- Main section -->
+          <main
+            id="main"
+            class="mx-auto grid max-w-[80%] grid-rows-[1fr,_2fr] pt-16 sm:max-w-[60%] sm:grid-cols-[1fr,_2fr] sm:grid-rows-1"
+          >
+            <div id="main-sidebar" class="p-5 text-white">
+              <div
+                id="logo"
+                class="mx-auto mb-5 flex max-w-fit flex-col rounded-xl border-2 border-solid border-white bg-slate-800 p-3 text-center text-5xl font-bold"
+              >
+                <span id="spanOne" class="text-[#00FF7F]">Piper's</span>
+                <span id="spanTwo" class="text-rose-600">Pizzeria</span>
+              </div>
+              <div
+                class="flex max-w-fit flex-col rounded-xl border-2 border-solid border-white bg-slate-800/70 p-3"
+              >
+                <p class="mb-3">
+                  Address: 5555 Old Harding Pike, Nashville TN 37221
+                </p>
+                <p class="mb-3">Phone: (555) 555-5555</p>
+                <p class="mb-3">Email: Pipers@gmail.com</p>
+                <p class="mb-3 font-bold">General Manager: Phillip J. Fry</p>
+                <p class="mb-3">Phone: (555) 555-4545</p>
+                <p>Email: Phillip.JF@gmail.com</p>
+              </div>
+            </div>
+            <div
+              id="main-content"
+              class="flex-col items-center p-5 py-10 text-white"
+            >
+              <h1
+                id="hOne"
+                class="mb-2 text-center text-2xl font-bold sm:text-4xl"
+              >
+                We can't wait to hear from you!
+              </h1>
+              <form></form>
+            </div>
+          </main>
+
+          <footer
+            id="footer"
+            class="flex items-center justify-center bg-slate-800 py-2 text-center text-white"
+          >
+            <a id="ghLink" href="#" class="flex">
+              <span id="gitHub"
+                ><img
+                  id="ghLogo"
+                  class="mr-3 h-6"
+                  src="../src/images/github-mark-white.svg"
+                  alt=""
+              /></span>
+              <p id="footer-text">Amberly</p>
+            </a>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
